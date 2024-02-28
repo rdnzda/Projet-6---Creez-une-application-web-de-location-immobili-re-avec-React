@@ -1,0 +1,828 @@
+#root {
+    flex: 1;
+    min-height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; 
+}
+
+header {
+    display: flex;
+    width: 1240px;
+    height: 68px;
+    justify-content: space-between;
+    padding: 45px 0px 0px 0px;
+}
+  
+nav {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    width: auto;
+    height: auto;
+}
+  
+nav a {
+    color: black;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}  
+
+nav a.active {
+    text-decoration: underline;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#home .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 1240px;
+    height: 223px;
+    border: 1px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../public/Banner.png");
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    color: white;
+}
+
+#home .banner h1 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    opacity:1;
+}
+
+#gallery {
+    width: 1240px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(246, 246, 246, 1);
+    border-radius: 25px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.card {
+    width: 340px;
+    height: 340px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card h2{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    top: 80%;
+    left: 5%;
+    width: 300px;
+    height: 52px;
+    margin: 0;
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#about .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 1240px;
+    height: 223px;
+    border: 1px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/Banner2.png");
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    color: white;
+}
+
+#about .banner h1 {
+    display: none;
+}
+
+#error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#error h1 {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 96, 96, 1);
+}
+
+#error p {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+}
+
+#error a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.collapses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.collapse-container {
+    width: 1023px;
+}
+
+.wrapper div {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: rgba(246, 246, 246, 0.45);
+}
+
+.wrapper div p{
+    margin: 15px 10px;
+}
+
+.collapse-button {
+    background: rgba(255, 96, 96, 1);
+    width: 100%;
+    height: 52px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}   
+  
+.collapse-button p {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.collapse-button img {
+    margin: 0px;
+    margin-right: 20px;
+    rotate: 0deg;
+    transition: rotate 0.3s ease-in-out;
+}
+
+img.open {
+    rotate: -180deg;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    padding: 0;
+    transition: grid-template-rows 0.4s ease-in-out, transform 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+.wrapper > div {
+    overflow: hidden;
+}
+
+.wrapper.open {
+    grid-template-rows: 1fr;
+    visibility: visible;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    width: auto;
+    text-align: center;
+    width: 1440px;
+    height: 209px;
+}
+
+footer img {
+    margin: 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+}
+
+.rating img {
+    width: 24px; /* Ajustez la largeur de l'étoile selon vos besoins */
+}
+
+.rating img.filled {
+    fill: #f8d64e; /* Couleur de l'étoile remplie */
+}
+
+.rating img:not(.filled) {
+    fill: #ccc; /* Couleur de l'étoile non remplie */
+}
+
+.carrousel {
+    width: 1240px;
+    height: 415px;
+    position: relative;
+}
+
+.carrousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrousel button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#arrowBack {
+    position: absolute;
+    left: 0;
+    top:148.3px;
+}
+
+#arrowForward {
+    position: absolute;
+    right: 0;
+    top:148.3px;
+}
+
+.house-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.house-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.house-card-content h1 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+    margin: 0px;
+}
+
+.house-card-content h2 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.host-rating {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+}
+
+.host {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    gap: 10px;
+    color: rgba(255, 96, 96, 1);
+}
+
+.host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.house-card div.collapses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.house-card div.collapses div.collapse-container {
+    width: 582px;
+}
+
+.house-card div.collapses div.collapse-container p {
+    padding: 20px 10px;
+}
+
+.house-card div.collapses div.collapse-container ul {
+    list-style-type: none;
+    padding: 20px 10px;
+    margin: 15px 10px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: 25px;
+}
+
+.tag div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    height: 25px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background: rgba(255, 96, 96, 1);
+}
+
+@media (max-width: 767.98px) {
+
+    #root {
+        margin: 0px;
+        gap: 20px;
+    }
+
+    header {
+        width: 335px;
+        font-family: Montserrat;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    header img {
+        width: 145px;
+        height: 46.88px;
+    }
+
+    header nav{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
+        height: fit-content;
+        gap: 25px;
+    }
+
+    #gallery {
+        flex-direction: column;
+        width: 335px;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 335px;
+        height: 255px;
+    }
+
+    .card h2 {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    #about {
+        gap: 20px;
+    }
+
+    #about .banner {
+        width: 335px;
+        height: 111px;
+    }
+
+    .collapses {
+        gap: 20px;
+    }
+
+    .collapse-container {
+        width: 335px;
+    }
+
+    .collapse-button {
+        background: rgb(255, 96, 96);
+        width: 100%;
+        height: 30px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .collapse-button p {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    .collapse-button img {
+        width: 16px;
+        height: 9.14px;
+        margin-right: 5px;
+    }
+
+    .wrapper div p {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    #home {
+        gap: 20px;
+    }
+
+    #home .banner {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: none
+    }
+
+    #home .banner h1 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 225px;
+        height: 48px;
+        top: 10px;
+        left: 16px;
+        position: absolute;
+        text-shadow: none;
+    }
+
+    footer {
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    footer img{
+        width: 122px;
+        height: 39.44px;
+        top: 66px;
+        left: 127px;
+        margin: 0px;
+    }
+
+    footer p {
+        width: 122px;
+        height: 39.44px;
+        margin-top: 15px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .carrousel {
+        width: 335px;
+        height: 255px;
+    }
+
+    #arrowBack {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 5px;
+        top:115px;
+    }
+    
+    #arrowForward {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 5px;
+        top:115px;
+    }
+
+    .house-card {
+        gap: 20px;
+    }
+
+    .house-card-content {
+        flex-direction: column;
+    }
+
+    .house-card-content h1 {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 335px;
+    }
+
+    .house-card-content h2 {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .tags {
+        width: 335px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        height: 18px;
+    }
+
+    .tag div{
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .host-rating {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .host-rating h2 {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
+    }
+
+    .host-rating .rating {
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .host-rating .rating img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .host-rating .host {
+        align-items: center;
+    }
+
+    .host-rating .host h2{
+        width: 80px;
+        margin: 0;
+    }
+
+    .host-rating .host img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .house-card div.collapses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .house-card div.collapses div.collapse-container p {
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0px 10px;
+        padding: 0px;
+    }
+
+    .house-card div.collapses div.collapse-container img {
+        width: 16px;
+        height: 9.14px;
+        margin-right: 10px;
+    }
+
+    .house-card div.collapses div.collapse-container{
+        flex-direction: column;
+        width: 335px;
+    }
+
+    .house-card div.collapses div.collapse-container .collapse-button{
+        width: 335px;
+        height: 30px;
+    }
+
+    .house-card div.collapses div.collapse-container .wrapper div p {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .house-card div.collapses div.collapse-container .wrapper div ul {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 10px;
+        padding: 0px;
+    }
+
+    #error {
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    #error h1 {
+        font-family: Montserrat;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 137px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    #error p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 260px;
+    }
+
+    #error a {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
