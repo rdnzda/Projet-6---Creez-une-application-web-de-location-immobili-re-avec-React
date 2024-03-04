@@ -13,11 +13,14 @@ export const Carrousel = ({ images, title }) => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
+    const imageCountText = `${currentImageIndex + 1}/${images.length}`;
+
     return (
         <div className="carrousel">
             <button id="arrowBack" onClick={handlePrevClick}><img src={arrowBack} alt="arrow-back"></img></button>
             <img src={images[currentImageIndex]} alt={title}></img>
             <button id="arrowForward" onClick={handleNextClick}><img src={arrowForward} alt="arrow-forward"></img></button>
+            <div className="image-count">{imageCountText}</div>
         </div>
     );
 }
