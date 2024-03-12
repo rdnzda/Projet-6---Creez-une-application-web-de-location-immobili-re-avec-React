@@ -52,6 +52,7 @@ nav a.active {
     align-items: center;
     gap: 50px;
     width: 90%;
+    max-width: 1440px;
 }
 
 #home .banner {
@@ -143,6 +144,7 @@ nav a.active {
     flex-direction: column;
     gap: 40px;
     width: 90%;
+    max-width: 1440px;
 }
 
 #about .banner {
@@ -379,6 +381,7 @@ footer p {
     gap: 30px;
     align-items: center;
     width: 90%;
+    max-width: 1440px;
 }
 
 .house-card-content {
