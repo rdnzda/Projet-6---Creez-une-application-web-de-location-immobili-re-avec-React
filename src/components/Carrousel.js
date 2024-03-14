@@ -15,7 +15,14 @@ export const Carrousel = ({ images, title }) => {
 
     const imageCountText = `${currentImageIndex + 1}/${images.length}`;
 
-    return (
+    if (images.length === 1) {
+        return (
+            <div className="carrousel">
+                <img src={images[currentImageIndex]} alt={title}></img>
+                <div className="image-count">{imageCountText}</div>
+            </div>
+        );
+    } else return (
         <div className="carrousel">
             <button id="arrowBack" onClick={handlePrevClick}><img src={arrowBack} alt="arrow-back"></img></button>
             <img src={images[currentImageIndex]} alt={title}></img>

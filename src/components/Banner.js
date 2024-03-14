@@ -1,7 +1,9 @@
-export const Banner = () => {
+export const Banner = ({imgUrl, h1}) => {
     return (
         <section className="banner">
-            <h1>Chez vous, partout et ailleurs</h1>
+            <img alt="banner" src={imgUrl}></img>
+            <div></div>
+            <h1>{h1}</h1>
         </section>
     );
 }

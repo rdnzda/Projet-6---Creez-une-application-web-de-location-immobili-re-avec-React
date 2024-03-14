@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import logements from '../data.js'
+import logements from '../data/logements.js'
 
 export const Gallery = () => {
     console.log(logements)

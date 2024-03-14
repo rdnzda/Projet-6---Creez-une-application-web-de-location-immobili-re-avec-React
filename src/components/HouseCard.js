@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 import { Carrousel } from "./Carrousel";
-import logements from '../data'
+import logements from '../data/logements.js'
 import { Tags } from "./Tags";
 import { HostRating } from "./HostRating";
 import Collapse from "./Collapse";

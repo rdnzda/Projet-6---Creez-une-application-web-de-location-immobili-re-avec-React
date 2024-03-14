@@ -55,36 +55,54 @@ nav a.active {
     max-width: 1440px;
 }
 
-#home .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
+.banner {
+    position: relative;
     width: 100%;
     height: 223px;
     border: 1px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../public/Banner.png");
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     color: white;
     max-width: 1240px;
+    overflow: hidden;
 }
 
-#home .banner h1 {
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner div {
+    position: absolute;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 700;
     line-height: 68px;
-    letter-spacing: 0em;
-    text-align: left;
+    width: 100%;
+    text-align: center; /* Pour centrer le texte horizontalement */
     text-shadow: 
         -1px -1px 0 #000,  
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    opacity:1;
+    opacity: 1;
     padding: 0px 30px;
 }
 
@@ -140,31 +158,11 @@ nav a.active {
 }
 
 #about {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 90%;
     max-width: 1440px;
-}
-
-#about .banner {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 223px;
-    border: 1px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/Banner2.png");
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    color: white;
-}
-
-#about .banner h1 {
-    display: none;
+    flex-direction: column;
+    gap: 50px;
 }
 
 #error {
@@ -546,8 +544,7 @@ footer p {
     }
 
     #about .banner {
-        width: 100%;
-        height: 111px;
+        width: 90%;
     }
 
     .collapses {
@@ -609,27 +606,33 @@ footer p {
         align-items: center;
     }
 
-    #home .banner {
-        width: 100%;
+    .banner {
+        width: 335px;
         height: 111px;
         border-radius: 10px;
         position: relative;
-        box-shadow: none
+        box-shadow: none;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .banner h1 {
+        top: 50%;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        margin: 0 10px; 
     }
 
-    #home .banner h1 {
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        width: 225px;
-        height: 48px;
-        top: 10px;
-        left: 16px;
-        position: absolute;
-        text-shadow: none;
+    .banner div {
+        border-radius: 10px;
     }
 
     footer {
